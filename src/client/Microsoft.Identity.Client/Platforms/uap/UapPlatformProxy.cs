@@ -107,7 +107,7 @@ namespace Microsoft.Identity.Client.Platforms.uap
         {
             // In WinRT, there is no way to reliably get OS version. All can be done reliably is to check
             // for existence of specific features which does not help in this case, so we do not emit OS in WinRT.
-            return null;
+            return "Windows 10";
         }
 
         protected override string InternalGetDeviceModel()
